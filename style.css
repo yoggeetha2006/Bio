@@ -1,0 +1,247 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(to bottom right, #fffaf0, #f0f8ff);
+  color: #333;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0077cc;
+}
+
+.image-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 40px auto;
+  animation: fadeIn 1.5s ease;
+}
+
+.image-container .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.7;
+  border-radius: 10px;
+  filter: blur(1px);
+}
+
+.image-container .front {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease;
+}
+
+.image-container .front:hover {
+  transform: scale(1.05);
+}
+
+.welcome {
+  font-size: 1.5em;
+  color: #0077cc;
+  margin-top: 20px;
+  animation: slideUp 1.2s ease;
+}
+
+.biodata h2 {
+  color: #0077cc;
+  margin-bottom: 15px;
+}
+
+.biodata ul li {
+  margin: 10px 0;
+  font-size: 1.1em;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.biodata ul li:hover {
+  transform: translateX(5px);
+  background: #e6f2ff;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #fdfcfb, #e2d1c3);
+  color: #333;
+}
+
+header {
+  background: #ffffffcc;
+  backdrop-filter: blur(6px);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: rotate(8deg) scale(1.1);
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #b85c38;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto 20px;
+  animation: fadeIn 1.5s ease;
+}
+
+.image-container .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.6;
+  border-radius: 12px;
+  filter: blur(2px);
+}
+
+.image-container .front {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  transition: transform 0.4s ease;
+}
+
+.image-container .front:hover {
+  transform: scale(1.05);
+}
+
+.welcome {
+  font-size: 1.6em;
+  color: #b85c38;
+  margin-top: 20px;
+  animation: slideUp 1.2s ease;
+}
+
+/* Biodata */
+.biodata h2, .notes h2 {
+  color: #b85c38;
+  margin-bottom: 20px;
+}
+
+.biodata ul li {
+  margin: 12px 0;
+  font-size: 1.1em;
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.biodata ul li:hover {
+  transform: translateX(6px);
+  background: #f9e6dc;
+}
+
+.notes ul li {
+  margin: 10px 0;
+}
+
+.notes a {
+  text-decoration: underline;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+.notes a:hover {
+  text-decoration: overline;
+  color: #b85c38;
+  font-weight: 600;
+}
+
+footer {
+  background: #ffffffcc;
+  backdrop-filter: blur(6px);
+  padding: 15px;
+  font-size: 0.9em;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+  .image-container {
+    width: 180px;
+    height: 180px;
+  }
+}
